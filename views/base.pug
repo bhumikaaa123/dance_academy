@@ -1,0 +1,21 @@
+doctype html 
+html 
+    head 
+        title Core dance academy 
+        block scripts 
+        block style
+    body 
+         
+        nav#navbar
+            ul
+                div#logo
+                    img(src="/static/img/logo.png")
+                    | CDA
+                li #[a(href="/") Home]
+                li #[a(href="/aboutus") About]
+                li #[a(href="/") Services]
+                li #[a(href="/contact") Contact Us]
+        block content
+    
+        footer#footer
+            p All rights reserved &copy; || Core2023

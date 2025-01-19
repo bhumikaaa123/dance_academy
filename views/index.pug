@@ -1,0 +1,60 @@
+//- index.pug
+doctype html
+html
+  head
+    title Core Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            div#logo
+                img(src="/static/img/logo.png")
+                | CDA
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/") Contact Us]
+    
+    section#introSection
+        div Welcome to Chirag's Dance Academy
+        div.small Roz subh utho,nacho,sojao and repeat
+
+    section#missionSection
+        h2 Our Mission
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/img/1.png")
+                div.card-content
+                    p This is the best dance academy of the universe
+        div.card
+            h3 Dance the way you like
+            div.card-box
+                div.card-img
+                    img(src="/static/img/2.png")
+                div.card-content
+                    p This is the best dance academy of the universe
+        div.card
+            h3 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/img/3.png")
+                div.card-content
+                    p This is the best dance academy of the universe
+
+    section#sponsorsSection
+        h2 Our Sponsors
+        div#sponsors 
+            img(src="static/img/logo1.png", alt="sponsors image" class='spImage')
+            img(src="static/img/logo2.png", alt="sponsors image" class='spImage')
+            img(src="static/img/logo3.png", alt="sponsors image" class='spImage')
+            img(src="static/img/logo4.png", alt="sponsors image" class='spImage')
+    
+    
+    footer#footer
+        p All rights reserved &copy; || Chirag2023
+    script
+      include ../static/index.js
